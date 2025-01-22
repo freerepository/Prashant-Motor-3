@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:backgroundTint="#F8F7F7"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/_128sdp"
+        android:paddingTop="@dimen/_24sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/colorAccent">
+        <ImageView
+            android:id="@+id/iv_admin"
+            android:layout_width="@dimen/_64sdp"
+            android:layout_height="@dimen/_64sdp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            app:srcCompat="@drawable/user"
+            app:tint="@android:color/white"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_16sdp" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_admin"
+            android:layout_alignStart="@id/iv_admin"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:paddingStart="@dimen/_1sdp"
+            android:text=""
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/menu_admin_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/_2sdp"
+        android:elevation="2dp"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/rl">
+        <ImageView
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginVertical="@dimen/_8sdp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/setting"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_24sdp"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Admin Login"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/menu_Attendance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/_2sdp"
+        android:elevation="2dp"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/menu_admin_login">
+        <ImageView
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginVertical="@dimen/_8sdp"
+            android:src="@drawable/img_attendance"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_24sdp"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Attendance"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/menu_selectworkin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/_2sdp"
+        android:elevation="2dp"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/menu_Attendance">
+        <ImageView
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginVertical="@dimen/_8sdp"
+            android:src="@drawable/img_attendance"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_24sdp"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Select Shift"/>
+    </LinearLayout>
+<LinearLayout
+        android:id="@+id/menu_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/_2sdp"
+        android:elevation="2dp"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/menu_selectworkin">
+        <ImageView
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginVertical="@dimen/_8sdp"
+            android:src="@drawable/icon_home"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_24sdp"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Home Page"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menu_init"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/_2sdp"
+        android:elevation="2dp"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/menu_home">
+        <ImageView
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginVertical="@dimen/_8sdp"
+            android:src="@drawable/setting"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_24sdp"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Initialize device"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

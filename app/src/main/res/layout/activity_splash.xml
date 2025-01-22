@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity"
+    android:background="@drawable/bg">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foreground="@drawable/transparent96"/>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_logo"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_120sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardCornerRadius="@dimen/_60sdp"
+        android:elevation="2dp"
+        app:cardElevation="2dp"
+        android:layout_marginTop="@dimen/_32sdp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:src="@drawable/logo_ph"
+            android:scaleType="centerCrop"/>
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/ivfp"
+        android:layout_width="@dimen/_220sdp"
+        android:layout_height="@dimen/_220sdp"
+        android:layout_marginTop="@dimen/_32sdp"
+        android:src="@drawable/fp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cv_logo"
+        app:tint="@android:color/white" />
+    <FrameLayout
+        android:id="@+id/fl_anim"
+        android:layout_width="@dimen/_220sdp"
+        android:layout_height="@dimen/_220sdp"
+        app:layout_constraintTop_toTopOf="@+id/ivfp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivfp"
+        app:layout_constraintStart_toStartOf="@+id/ivfp"
+        app:layout_constraintEnd_toEndOf="@+id/ivfp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/powerd_by"
+        android:gravity="center"
+        android:text="Powerd by"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@android:color/white" />
+    <ImageView
+        android:id="@+id/powerd_by"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:src="@drawable/logo_sedulous"
+        android:textColor="@android:color/white"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

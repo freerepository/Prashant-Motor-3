@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:width="48dp" android:gravity="start">
+        <shape android:shape="rectangle">
+            <corners android:topRightRadius="24dp"
+                android:bottomRightRadius="24dp"/>
+            <solid android:color="@color/fg_color"/>
+        </shape>
+    </item>
+    <item android:drawable="@drawable/rb_checked" android:gravity="center_vertical"
+        android:width="48dp" android:height="48dp"/>
+</layer-list>
