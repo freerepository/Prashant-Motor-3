@@ -7,37 +7,37 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.sedulous.attendancphospital.ui.home.HomeFragment"
+        android:name="attendancehonda.ui.home.HomeFragment"
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/nav_gallery"
-        android:name="com.sedulous.attendancphospital.ui.gallery.GalleryFragment"
+        android:name="attendancehonda.ui.gallery.GalleryFragment"
         android:label="@string/menu_gallery"
         tools:layout="@layout/fragment_gallery" />
 
     <fragment
         android:id="@+id/nav_slideshow"
-        android:name="com.sedulous.attendancphospital.ui.slideshow.SlideshowFragment"
+        android:name="attendancehonda.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
 
     <fragment
         android:id="@+id/nav_tools"
-        android:name="com.sedulous.attendancphospital.ui.tools.ToolsFragment"
+        android:name="attendancehonda.ui.tools.ToolsFragment"
         android:label="@string/menu_tools"
         tools:layout="@layout/fragment_tools" />
 
     <fragment
         android:id="@+id/nav_share"
-        android:name="com.sedulous.attendancphospital.ui.share.ShareFragment"
+        android:name="attendancehonda.ui.share.ShareFragment"
         android:label="@string/menu_share"
         tools:layout="@layout/fragment_share" />
 
     <fragment
         android:id="@+id/nav_send"
-        android:name="com.sedulous.attendancphospital.ui.send.SendFragment"
+        android:name="attendancehonda.ui.send.SendFragment"
         android:label="@string/menu_send"
         tools:layout="@layout/fragment_send" />
 </navigation>

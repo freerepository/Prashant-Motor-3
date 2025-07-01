@@ -1,4 +1,4 @@
-package com.sedulous.attendancphospital;
+package com.sedulous.attendancehonda3;
 
 import android.app.Activity;
 import android.app.Dialog;
@@ -57,6 +57,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import static android.content.Context.INPUT_METHOD_SERVICE;
 import static android.content.Context.MODE_PRIVATE;
+
+import attendancehonda.BuildConfig;
 
 public class O {
 

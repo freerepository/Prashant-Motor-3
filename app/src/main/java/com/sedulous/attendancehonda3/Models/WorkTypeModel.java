@@ -1,4 +1,4 @@
-package com.sedulous.attendancphospital.Models;
+package com.sedulous.attendancehonda3.Models;
 
 import com.google.gson.annotations.SerializedName;
 import java.io.Serializable;

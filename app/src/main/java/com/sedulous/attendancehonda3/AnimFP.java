@@ -1,4 +1,4 @@
-package com.sedulous.attendancphospital;
+package com.sedulous.attendancehonda3;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -9,6 +9,8 @@ import android.graphics.Rect;
 import android.graphics.RectF;
 import android.graphics.Shader;
 import android.view.View;
+
+import attendancehonda.R;
 
 public class AnimFP extends View {
     Paint paint, paint_w;
